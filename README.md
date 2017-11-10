@@ -10,6 +10,7 @@ This is a soft fork of [Materia](https://github.com/nana-4/materia-theme) using 
 
 - Most colours are based on the [Ubuntu colour palette](https://design.ubuntu.com/brand/colour-palette/).
 - Using primary color for `button.suggested-action`.
+- Using accent color for `button:checked`.
 - Tweaking text opacities for the theme.
 
 ## Installation

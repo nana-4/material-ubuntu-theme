@@ -166,13 +166,13 @@
   }
 
   @if $t == checked {
-    background-color: $primary_color;
+    background-color: $accent_color;
     color: $inverse_fg_color;
   }
 
   @if $t == checked-insensitive {
     background-color: $fill_color;
-    color: rgba($primary_color, $disabled_opacity);
+    color: rgba($accent_color, $disabled_opacity);
     > .label { color: inherit; }
   }
 
