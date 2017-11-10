@@ -8,7 +8,7 @@
 REPO_DIR=$(cd $(dirname $0) && pwd)
 SRC_PATH=${REPO_DIR}/src
 
-THEME_NAME=Materia.dev
+THEME_NAME=Material-Ubuntu.dev
 THEMES_DIR=~/.themes
 
 GNOME_VERSION=3.24

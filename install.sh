@@ -5,7 +5,7 @@ set -ueo pipefail
 repodir=$(cd $(dirname $0) && pwd)
 srcdir=${repodir}/src
 
-themedir_base_fallback=${destdir:-}/usr/share/themes/Materia
+themedir_base_fallback=${destdir:-}/usr/share/themes/Material-Ubuntu
 themedir_base=${THEME_DIR_BASE:-$themedir_base_fallback}
 
 if [[ $(which gnome-shell 2> /dev/null) ]]; then
@@ -46,7 +46,7 @@ echo
 
 for color in "${_COLOR_VARIANTS[@]}"; do
   for size in "${_SIZE_VARIANTS[@]}"; do
-    echo Installing Materia${color}${size} ...
+    echo Installing Material-Ubuntu${color}${size} ...
 
     themedir=${themedir_base}${color}${size}
     if [[ -d ${themedir} ]]; then

@@ -1,12 +1,12 @@
 [Desktop Entry]
 Type=X-GNOME-Metatheme
-Name=Materia-dark
-Comment=A Material Design theme
+Name=Material-Ubuntu-dark
+Comment=A Material Design theme using Ubuntu colour palette
 Encoding=UTF-8
 
 [X-GNOME-Metatheme]
-GtkTheme=Materia-dark
-MetacityTheme=Materia-dark
+GtkTheme=Material-Ubuntu-dark
+MetacityTheme=Material-Ubuntu-dark
 IconTheme=Adwaita
 CursorTheme=Adwaita
 CursorSize=24
