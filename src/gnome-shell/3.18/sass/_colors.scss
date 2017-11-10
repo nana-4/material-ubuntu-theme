@@ -3,14 +3,9 @@
 
 @import 'color-palette';
 
-@function fade($c) {
-  @return mix($c, $grey_900, 50%);
-}
-
 // Foreground colors
 $dark_fg_color:   $black;
 $light_fg_color:  $white;
-$button_fg_color: if($variant == 'light', rgba(#111111, 0.8), rgba(#EEEDEB, 0.8)); // extra fg color for raised buttons
 
 $fg_color:                    if($variant == 'light', #111111, #EEEDEB);
 $secondary_fg_color:          rgba($fg_color, 0.7);
@@ -19,6 +14,7 @@ $disabled_fg_color:           rgba($fg_color, 0.5);
 $disabled_secondary_fg_color: rgba($fg_color, 0.3);
 $track_color:                 rgba($fg_color, 0.3);
 $divider_color:               rgba($fg_color, 0.12);
+$button_fg_color:             rgba($fg_color, 0.8); // extra fg color for raised buttons
 
 $titlebar_fg_color:                    if($titlebar == 'light', #111111, #EEEDEB);
 $titlebar_secondary_fg_color:          rgba($titlebar_fg_color, 0.7);
