@@ -9,6 +9,7 @@ This is a soft fork of [Materia](https://github.com/nana-4/materia-theme) using 
 ## Differences from Materia
 
 - Most colours are based on the [Ubuntu colour palette](https://design.ubuntu.com/brand/colour-palette/).
+- Tweaking text opacities for the theme.
 
 ## Installation
 
