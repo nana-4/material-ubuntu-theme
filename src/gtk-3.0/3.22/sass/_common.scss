@@ -1285,14 +1285,14 @@ headerbar { // headerbar border rounding
     @extend %flat_button;
 
     border-image: radial-gradient(circle closest-corner at center calc(100% - 1px),
-                                  $primary_color 0%,
+                                  $accent_color 0%,
                                   transparent 0%)
                                   0 0 0 / 0 0 0px;
     border-radius: 2px;
 
     &:checked {
       border-image: radial-gradient(circle closest-corner at center calc(100% - 1px),
-                                    $primary_color 100%,
+                                    $accent_color 100%,
                                     transparent 0%)
                                     0 0 2 / 0 0 2px;
 
@@ -1636,7 +1636,7 @@ notebook {
 
           &:hover { box-shadow: inset 0 -2px $track_color; }
 
-          &:checked { box-shadow: inset 0 -2px $primary_color; }
+          &:checked { box-shadow: inset 0 -2px $accent_color; }
         }
       }
     }
@@ -1649,7 +1649,7 @@ notebook {
 
           &:hover { box-shadow: inset 0 2px $track_color; }
 
-          &:checked { box-shadow: inset 0 2px $primary_color; }
+          &:checked { box-shadow: inset 0 2px $accent_color; }
         }
       }
     }
@@ -1662,7 +1662,7 @@ notebook {
 
           &:hover { box-shadow: inset -2px 0 $track_color; }
 
-          &:checked { box-shadow: inset -2px 0 $primary_color; }
+          &:checked { box-shadow: inset -2px 0 $accent_color; }
         }
       }
     }
@@ -1675,7 +1675,7 @@ notebook {
 
           &:hover { box-shadow: inset 2px 0 $track_color; }
 
-          &:checked { box-shadow: inset 2px 0 $primary_color; }
+          &:checked { box-shadow: inset 2px 0 $accent_color; }
         }
       }
     }
@@ -1756,7 +1756,7 @@ notebook {
       border-color: transparent; //
 
       background-image: radial-gradient(circle farthest-corner at center,
-                                        $primary_color 10%,
+                                        $accent_color 10%,
                                         transparent 0%);
       background-repeat: no-repeat;
       background-position: center;
@@ -3491,14 +3491,14 @@ button.emoji-section {
   &:hover { box-shadow: inset 0 2px $track_color; }
 
   &:active {
-    box-shadow: inset 0 2px $primary_color;
+    box-shadow: inset 0 2px $accent_color;
     background-image: radial-gradient(circle farthest-corner at center,
-                                      rgba($primary_color, 0.7) 10%,
+                                      rgba($accent_color, 0.7) 10%,
                                       transparent 0%);
   }
 
   &:checked {
-    box-shadow: inset 0 2px $primary_color;
+    box-shadow: inset 0 2px $accent_color;
     background-color: transparent;
   }
 
