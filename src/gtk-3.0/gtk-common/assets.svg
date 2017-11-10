@@ -42,6 +42,10 @@
       <stop stop-color="#EEEDEB" stop-opacity="0.12"/>
     </linearGradient>
 
+    <linearGradient id="color-fg-inverse">
+      <stop stop-color="#FFFFFF"/>
+    </linearGradient>
+
     <linearGradient id="color-primary">
       <stop stop-color="#ED764D"/>
     </linearGradient>
@@ -50,8 +54,16 @@
       <stop stop-color="#84377D"/>
     </linearGradient>
 
+    <linearGradient id="color-accent-dark">
+      <stop stop-color="#AD79A8"/>
+    </linearGradient>
+
     <linearGradient id="color-accent-disabled">
       <stop stop-color="#84377D" stop-opacity="0.5"/>
+    </linearGradient>
+
+    <linearGradient id="color-accent-disabled-dark">
+      <stop stop-color="#AD79A8" stop-opacity="0.5"/>
     </linearGradient>
 
     <linearGradient id="color-bg">
@@ -269,8 +281,8 @@
 
     <g id="base-selectionmode-checkbox-checked">
       <use xlink:href="#40x40"/>
-      <use xlink:href="#button-fill" transform="matrix(1.5 0 0 1.5 2 2)" fill="url(#color-accent)"/>
-      <use xlink:href="#check-path" transform="matrix(1.5 0 0 1.5 2 2)" fill="url(#color-fg-dark)"/>
+      <use xlink:href="#button-fill" transform="matrix(1.5 0 0 1.5 2 2)"/>
+      <use xlink:href="#check-path" transform="matrix(1.5 0 0 1.5 2 2)" fill="url(#color-fg-inverse)"/>
     </g>
 
     <g id="base-scale-slider">
@@ -371,7 +383,7 @@
   <use x="172" y="160" xlink:href="#base-menu-radio-mixed" fill="url(#color-accent-disabled)" id="menu-radio-mixed-disabled"/>
 
   <use x="8"   y="184" xlink:href="#base-selectionmode-checkbox-unchecked" fill="url(#color-bg-lighter)" id="selectionmode-checkbox-unchecked"/>
-  <use x="56"  y="184" xlink:href="#base-selectionmode-checkbox-checked" id="selectionmode-checkbox-checked"/>
+  <use x="56"  y="184" xlink:href="#base-selectionmode-checkbox-checked" fill="url(#color-accent)" id="selectionmode-checkbox-checked"/>
 
   <use x="16"  y="240" xlink:href="#base-scale-slider" id="scale-slider"/>
   <use x="16"  y="280" xlink:href="#base-scale-slider-disabled" id="scale-slider-disabled"/>
@@ -397,51 +409,51 @@
   <use x="208" y="72"  xlink:href="#base-checkbox-unchecked-active" fill="url(#color-fg-dark)" id="checkbox-unchecked-active-dark"/>
   <use x="208" y="104" xlink:href="#base-checkbox-unchecked" fill="url(#color-fg-secondary-disabled-dark)" id="checkbox-unchecked-disabled-dark"/>
 
-  <use x="240" y="8"   xlink:href="#base-checkbox-checked" fill="url(#color-accent)" id="checkbox-checked-dark"/>
-  <use x="240" y="40"  xlink:href="#base-checkbox-checked-hover" fill="url(#color-accent)" id="checkbox-checked-hover-dark"/>
-  <use x="240" y="72"  xlink:href="#base-checkbox-checked-active" fill="url(#color-accent)" id="checkbox-checked-active-dark"/>
-  <use x="240" y="104" xlink:href="#base-checkbox-checked" fill="url(#color-accent-disabled)" id="checkbox-checked-disabled-dark"/>
+  <use x="240" y="8"   xlink:href="#base-checkbox-checked" fill="url(#color-accent-dark)" id="checkbox-checked-dark"/>
+  <use x="240" y="40"  xlink:href="#base-checkbox-checked-hover" fill="url(#color-accent-dark)" id="checkbox-checked-hover-dark"/>
+  <use x="240" y="72"  xlink:href="#base-checkbox-checked-active" fill="url(#color-accent-dark)" id="checkbox-checked-active-dark"/>
+  <use x="240" y="104" xlink:href="#base-checkbox-checked" fill="url(#color-accent-disabled-dark)" id="checkbox-checked-disabled-dark"/>
 
-  <use x="272" y="8"   xlink:href="#base-checkbox-mixed" fill="url(#color-accent)" id="checkbox-mixed-dark"/>
-  <use x="272" y="40"  xlink:href="#base-checkbox-mixed-hover" fill="url(#color-accent)" id="checkbox-mixed-hover-dark"/>
-  <use x="272" y="72"  xlink:href="#base-checkbox-mixed-active" fill="url(#color-accent)" id="checkbox-mixed-active-dark"/>
-  <use x="272" y="104" xlink:href="#base-checkbox-mixed" fill="url(#color-accent-disabled)" id="checkbox-mixed-disabled-dark"/>
+  <use x="272" y="8"   xlink:href="#base-checkbox-mixed" fill="url(#color-accent-dark)" id="checkbox-mixed-dark"/>
+  <use x="272" y="40"  xlink:href="#base-checkbox-mixed-hover" fill="url(#color-accent-dark)" id="checkbox-mixed-hover-dark"/>
+  <use x="272" y="72"  xlink:href="#base-checkbox-mixed-active" fill="url(#color-accent-dark)" id="checkbox-mixed-active-dark"/>
+  <use x="272" y="104" xlink:href="#base-checkbox-mixed" fill="url(#color-accent-disabled-dark)" id="checkbox-mixed-disabled-dark"/>
 
   <use x="304" y="8"   xlink:href="#base-radio-unchecked" fill="url(#color-fg-secondary-dark)" id="radio-unchecked-dark"/>
   <use x="304" y="40"  xlink:href="#base-radio-unchecked-hover" fill="url(#color-fg-dark)" id="radio-unchecked-hover-dark"/>
   <use x="304" y="72"  xlink:href="#base-radio-unchecked-active" fill="url(#color-fg-dark)" id="radio-unchecked-active-dark"/>
   <use x="304" y="104" xlink:href="#base-radio-unchecked" fill="url(#color-fg-secondary-disabled-dark)" id="radio-unchecked-disabled-dark"/>
 
-  <use x="336" y="8"   xlink:href="#base-radio-checked" fill="url(#color-accent)" id="radio-checked-dark"/>
-  <use x="336" y="40"  xlink:href="#base-radio-checked-hover" fill="url(#color-accent)" id="radio-checked-hover-dark"/>
-  <use x="336" y="72"  xlink:href="#base-radio-checked-active" fill="url(#color-accent)" id="radio-checked-active-dark"/>
-  <use x="336" y="104" xlink:href="#base-radio-checked" fill="url(#color-accent-disabled)" id="radio-checked-disabled-dark"/>
+  <use x="336" y="8"   xlink:href="#base-radio-checked" fill="url(#color-accent-dark)" id="radio-checked-dark"/>
+  <use x="336" y="40"  xlink:href="#base-radio-checked-hover" fill="url(#color-accent-dark)" id="radio-checked-hover-dark"/>
+  <use x="336" y="72"  xlink:href="#base-radio-checked-active" fill="url(#color-accent-dark)" id="radio-checked-active-dark"/>
+  <use x="336" y="104" xlink:href="#base-radio-checked" fill="url(#color-accent-disabled-dark)" id="radio-checked-disabled-dark"/>
 
-  <use x="368" y="8"   xlink:href="#base-radio-mixed" fill="url(#color-accent)" id="radio-mixed-dark"/>
-  <use x="368" y="40"  xlink:href="#base-radio-mixed-hover" fill="url(#color-accent)" id="radio-mixed-hover-dark"/>
-  <use x="368" y="72"  xlink:href="#base-radio-mixed-active" fill="url(#color-accent)" id="radio-mixed-active-dark"/>
-  <use x="368" y="104" xlink:href="#base-radio-mixed" fill="url(#color-accent-disabled)" id="radio-mixed-disabled-dark"/>
+  <use x="368" y="8"   xlink:href="#base-radio-mixed" fill="url(#color-accent-dark)" id="radio-mixed-dark"/>
+  <use x="368" y="40"  xlink:href="#base-radio-mixed-hover" fill="url(#color-accent-dark)" id="radio-mixed-hover-dark"/>
+  <use x="368" y="72"  xlink:href="#base-radio-mixed-active" fill="url(#color-accent-dark)" id="radio-mixed-active-dark"/>
+  <use x="368" y="104" xlink:href="#base-radio-mixed" fill="url(#color-accent-disabled-dark)" id="radio-mixed-disabled-dark"/>
 
   <use x="212" y="136" xlink:href="#base-menu-checkbox-unchecked" fill="url(#color-fg-secondary-dark)" id="menu-checkbox-unchecked-dark"/>
   <use x="212" y="160" xlink:href="#base-menu-checkbox-unchecked" fill="url(#color-fg-secondary-disabled-dark)" id="menu-checkbox-unchecked-disabled-dark"/>
 
-  <use x="244" y="136" xlink:href="#base-menu-checkbox-checked" fill="url(#color-accent)" id="menu-checkbox-checked-dark"/>
-  <use x="244" y="160" xlink:href="#base-menu-checkbox-checked" fill="url(#color-accent-disabled)" id="menu-checkbox-checked-disabled-dark"/>
+  <use x="244" y="136" xlink:href="#base-menu-checkbox-checked" fill="url(#color-accent-dark)" id="menu-checkbox-checked-dark"/>
+  <use x="244" y="160" xlink:href="#base-menu-checkbox-checked" fill="url(#color-accent-disabled-dark)" id="menu-checkbox-checked-disabled-dark"/>
 
-  <use x="276" y="136" xlink:href="#base-menu-checkbox-mixed" fill="url(#color-accent)" id="menu-checkbox-mixed-dark"/>
-  <use x="276" y="160" xlink:href="#base-menu-checkbox-mixed" fill="url(#color-accent-disabled)" id="menu-checkbox-mixed-disabled-dark"/>
+  <use x="276" y="136" xlink:href="#base-menu-checkbox-mixed" fill="url(#color-accent-dark)" id="menu-checkbox-mixed-dark"/>
+  <use x="276" y="160" xlink:href="#base-menu-checkbox-mixed" fill="url(#color-accent-disabled-dark)" id="menu-checkbox-mixed-disabled-dark"/>
 
   <use x="308" y="136" xlink:href="#base-menu-radio-unchecked" fill="url(#color-fg-secondary-dark)" id="menu-radio-unchecked-dark"/>
   <use x="308" y="160" xlink:href="#base-menu-radio-unchecked" fill="url(#color-fg-secondary-disabled-dark)" id="menu-radio-unchecked-disabled-dark"/>
 
-  <use x="340" y="136" xlink:href="#base-menu-radio-checked" fill="url(#color-accent)" id="menu-radio-checked-dark"/>
-  <use x="340" y="160" xlink:href="#base-menu-radio-checked" fill="url(#color-accent-disabled)" id="menu-radio-checked-disabled-dark"/>
+  <use x="340" y="136" xlink:href="#base-menu-radio-checked" fill="url(#color-accent-dark)" id="menu-radio-checked-dark"/>
+  <use x="340" y="160" xlink:href="#base-menu-radio-checked" fill="url(#color-accent-disabled-dark)" id="menu-radio-checked-disabled-dark"/>
 
-  <use x="372" y="136" xlink:href="#base-menu-radio-mixed" fill="url(#color-accent)" id="menu-radio-mixed-dark"/>
-  <use x="372" y="160" xlink:href="#base-menu-radio-mixed" fill="url(#color-accent-disabled)" id="menu-radio-mixed-disabled-dark"/>
+  <use x="372" y="136" xlink:href="#base-menu-radio-mixed" fill="url(#color-accent-dark)" id="menu-radio-mixed-dark"/>
+  <use x="372" y="160" xlink:href="#base-menu-radio-mixed" fill="url(#color-accent-disabled-dark)" id="menu-radio-mixed-disabled-dark"/>
 
   <use x="208" y="184" xlink:href="#base-selectionmode-checkbox-unchecked" fill="url(#color-bg-lighter-dark)" id="selectionmode-checkbox-unchecked-dark"/>
-  <use x="256" y="184" xlink:href="#base-selectionmode-checkbox-checked" id="selectionmode-checkbox-checked-dark"/>
+  <use x="256" y="184" xlink:href="#base-selectionmode-checkbox-checked" fill="url(#color-accent-dark)" id="selectionmode-checkbox-checked-dark"/>
 
   <use x="216" y="240" xlink:href="#base-scale-slider" id="scale-slider-dark"/>
   <use x="216" y="280" xlink:href="#base-scale-slider-disabled-dark" id="scale-slider-disabled-dark"/>
