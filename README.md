@@ -9,7 +9,7 @@ This is a soft fork of [Materia](https://github.com/nana-4/materia-theme) using 
 ## Differences from Materia
 
 - Most colours are based on the [Ubuntu colour palette](https://design.ubuntu.com/brand/colour-palette/).
-- Using primary color for `button.suggested-action`.
+- Using primary color for `scale` and `button.suggested-action`.
 - Using accent color for `button:checked`.
 - Changing `.titlebar` background color when the window is inactive.
 - Tweaking text opacities for the theme.
@@ -23,6 +23,8 @@ sudo ./install.sh
 ```
 
 ## TODO & Known Issues
+
+- `scale` is indistinguishable when the background is selected.
 
 NOTE: Please do not report bugs that occur even with Materia. Please report them to [Materia's Issue Tracker](https://github.com/nana-4/materia-theme/issues).
 

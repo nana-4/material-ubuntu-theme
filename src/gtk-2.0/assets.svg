@@ -320,17 +320,17 @@
 
     <g id="base-scale-slider">
       <use xlink:href="#24x24"/>
-      <circle cx="12" cy="12" r="7" fill="url(#color-accent)"/>
+      <circle cx="12" cy="12" r="7" fill="url(#color-primary)"/>
     </g>
 
     <g id="base-scale-slider-hover">
       <use xlink:href="#24x24"/>
-      <circle cx="12" cy="12" r="8" fill="url(#color-accent)"/>
+      <circle cx="12" cy="12" r="8" fill="url(#color-primary)"/>
     </g>
 
     <g id="base-scale-slider-active">
       <use xlink:href="#24x24"/>
-      <circle cx="12" cy="12" r="9" fill="url(#color-accent)"/>
+      <circle cx="12" cy="12" r="9" fill="url(#color-primary)"/>
     </g>
 
     <g id="base-scale-slider-insensitive">
@@ -574,11 +574,11 @@
   <use x="8"   y="364" xlink:href="#base-scale-slider-insensitive" id="scale-slider-insensitive"/>
 
   <use x="40"  y="268" xlink:href="#base-scale-horz-trough" fill="url(#color-fg-secondary-disabled)" id="scale-horz-trough"/>
-  <use x="40"  y="332" xlink:href="#base-scale-horz-trough" fill="url(#color-accent)" id="scale-horz-trough-active"/>
+  <use x="40"  y="332" xlink:href="#base-scale-horz-trough" fill="url(#color-primary)" id="scale-horz-trough-active"/>
   <use x="40"  y="364" xlink:href="#base-scale-horz-trough" fill="url(#color-divider)" id="scale-horz-trough-insensitive"/>
 
   <use x="72"  y="268" xlink:href="#base-scale-vert-trough" fill="url(#color-fg-secondary-disabled)" id="scale-vert-trough"/>
-  <use x="72"  y="332" xlink:href="#base-scale-vert-trough" fill="url(#color-accent)" id="scale-vert-trough-active"/>
+  <use x="72"  y="332" xlink:href="#base-scale-vert-trough" fill="url(#color-primary)" id="scale-vert-trough-active"/>
   <use x="72"  y="364" xlink:href="#base-scale-vert-trough" fill="url(#color-divider)" id="scale-vert-trough-insensitive"/>
 
   <use x="104" y="268" xlink:href="#base-scrollbar-horz-slider" fill="url(#color-fg-disabled)" id="scrollbar-horz-slider"/>

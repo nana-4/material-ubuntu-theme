@@ -2351,7 +2351,7 @@ scale {
   // the colored part of the backing bit
   highlight {
     transition: $longer_transition;
-    background-color: $accent_color;
+    background-color: $primary_color;
 
     &:disabled { background-color: transparent; }
   }
@@ -2368,7 +2368,7 @@ scale {
   slider {
     transition: all $shorter_duration $standard_curve;
     // border-radius: 100%;
-    // background-color: $accent_color;
+    // background-color: $primary_color;
     background-repeat: no-repeat;
     background-position: center;
 
