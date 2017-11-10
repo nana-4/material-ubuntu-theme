@@ -7,43 +7,43 @@
 
   <defs>
     <linearGradient id="color-fg">
-      <stop stop-color="#000000" stop-opacity="0.87"/>
+      <stop stop-color="#111111"/>
     </linearGradient>
 
     <linearGradient id="color-fg-disabled">
-      <stop stop-color="#000000" stop-opacity="0.38"/>
+      <stop stop-color="#111111" stop-opacity="0.5"/>
     </linearGradient>
 
     <linearGradient id="color-fg-secondary">
-      <stop stop-color="#000000" stop-opacity="0.54"/>
+      <stop stop-color="#111111" stop-opacity="0.7"/>
     </linearGradient>
 
     <linearGradient id="color-fg-secondary-disabled">
-      <stop stop-color="#000000" stop-opacity="0.26"/>
+      <stop stop-color="#111111" stop-opacity="0.3"/>
     </linearGradient>
 
     <linearGradient id="color-divider">
-      <stop stop-color="#000000" stop-opacity="0.12"/>
+      <stop stop-color="#111111" stop-opacity="0.12"/>
     </linearGradient>
 
     <linearGradient id="color-primary">
-      <stop stop-color="#42A5F5"/>
+      <stop stop-color="#ED764D"/>
     </linearGradient>
 
     <linearGradient id="color-accent">
-      <stop stop-color="#FF4081"/>
+      <stop stop-color="#84377D"/>
     </linearGradient>
 
     <linearGradient id="color-accent-insensitive">
-      <stop stop-color="#FF4081" stop-opacity="0.5"/>
+      <stop stop-color="#84377D" stop-opacity="0.5"/>
     </linearGradient>
 
     <linearGradient id="color-bg">
-      <stop stop-color="#F5F5F5"/>
+      <stop stop-color="#EEEDEB"/>
     </linearGradient>
 
     <linearGradient id="color-bg-lighter">
-      <stop stop-color="#FAFAFA"/>
+      <stop stop-color="#F6F6F5"/>
     </linearGradient>
 
     <linearGradient id="color-base">
@@ -51,7 +51,7 @@
     </linearGradient>
 
     <linearGradient id="color-base-alt">
-      <stop stop-color="#FAFAFA"/>
+      <stop stop-color="#F6F6F5"/>
     </linearGradient>
 
     <linearGradient id="color-border">
