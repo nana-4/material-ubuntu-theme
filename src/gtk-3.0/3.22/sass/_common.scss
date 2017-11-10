@@ -1040,6 +1040,7 @@ headerbar {
   &:disabled :not(button) > label { color: $titlebar_disabled_fg_color; }
 
   &:backdrop {
+    background-color: $alt_titlebar_bg_color;
     color: $titlebar_secondary_fg_color;
 
     &:disabled :not(button) > label { color: $titlebar_disabled_secondary_fg_color; }
@@ -1422,6 +1423,10 @@ menubar,
   padding: 0;
   // box-shadow: inset 0 -1px $border_color;
   background-color: $titlebar_bg_color;
+
+  &:backdrop { background-color: $alt_titlebar_bg_color; }
+
+  .csd & { transition: background-color $shorter_duration $deceleration_curve; }
 
   > menuitem {
     transition: $shorter_transition;
