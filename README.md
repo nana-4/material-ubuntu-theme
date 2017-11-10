@@ -2,9 +2,9 @@
 
 This is a soft fork of [Materia](https://github.com/nana-4/materia-theme) using [Ubuntu colour palette](https://design.ubuntu.com/brand/colour-palette/).
 
-![theme](theme.png)
-![theme-dark](theme-dark.png)
-![theme-light](theme-light.png)
+![theme](../images/theme.png?raw=true)
+![theme-dark](../images/theme-dark.png?raw=true)
+![theme-light](../images/theme-light.png?raw=true)
 
 ## Differences from Materia
 
@@ -16,17 +16,27 @@ This is a soft fork of [Materia](https://github.com/nana-4/materia-theme) using 
 
 ## Installation
 
-Run:
+```bash
+git clone --depth 1 https://github.com/nana-4/material-ubuntu-theme.git
+cd material-ubuntu-theme
+sudo ./install.sh
+cd .. && rm -rf material-ubuntu-theme
+```
+
+## Uninstallation
 
 ```bash
-sudo ./install.sh
+sudo rm -rf /usr/share/themes/Material-Ubuntu{,-compact,-dark,-dark-compact,-light,-light-compact}
 ```
 
 ## TODO & Known Issues
 
+- `chrome`, `metacity-1`, `unity` and `xfwm4` themes are not adapted the colour palette for now.
 - `scale` is indistinguishable when the background is selected.
 
-NOTE: Please do not report bugs that occur even with Materia. Please report them to [Materia's Issue Tracker](https://github.com/nana-4/materia-theme/issues).
+For other bugs, see the Materia's Issue Tracker.
+
+**NOTE:** Please do not report bugs that occur even with Materia. Please report them to [Materia's Issue Tracker](https://github.com/nana-4/materia-theme/issues).
 
 ## License
 
