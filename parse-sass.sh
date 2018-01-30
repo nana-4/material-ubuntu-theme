@@ -6,19 +6,12 @@ if [ ! "$(which sassc 2> /dev/null)" ]; then
   exit 1
 fi
 
-_COLOR_VARIANTS=(
-  ''
-  '-dark'
-  '-light'
-)
+_COLOR_VARIANTS=('' '-dark' '-light')
 if [ ! -z "${COLOR_VARIANTS:-}" ]; then
   IFS=', ' read -r -a _COLOR_VARIANTS <<< "${COLOR_VARIANTS:-}"
 fi
 
-_SIZE_VARIANTS=(
-  ''
-  '-compact'
-)
+_SIZE_VARIANTS=('' '-compact')
 if [ ! -z "${SIZE_VARIANTS:-}" ]; then
   IFS=', ' read -r -a _SIZE_VARIANTS <<< "${SIZE_VARIANTS:-}"
 fi
@@ -29,11 +22,11 @@ echo "== Generating the CSS..."
 
 for color in "${_COLOR_VARIANTS[@]}"; do
   # The '-compact' variant is not supported for gtk '3.18'
-  sassc $SASSC_OPT src/gtk-3.0/3.18/gtk${color}.{scss,css}
+  sassc $SASSC_OPT src/gtk/3.18/gtk${color}.{scss,css}
 
   for size in "${_SIZE_VARIANTS[@]}"; do
     for version in '3.20' '3.22'; do
-      sassc $SASSC_OPT src/gtk-3.0/${version}/gtk${color}${size}.{scss,css}
+      sassc $SASSC_OPT src/gtk/${version}/gtk${color}${size}.{scss,css}
     done
 
     # This gnome-shell theme can skip versions '3.20' & '2.22'
@@ -42,3 +35,6 @@ for color in "${_COLOR_VARIANTS[@]}"; do
     done
   done
 done
+
+sassc $SASSC_OPT src/chrome/chrome-scrollbar/scrollbars.{scss,css}
+sassc $SASSC_OPT src/chrome/chrome-scrollbar-dark/scrollbars.{scss,css}
